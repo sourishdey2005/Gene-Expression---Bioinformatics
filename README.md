@@ -117,33 +117,20 @@ gene-expression-phase-prediction/
 
 - Python 3.8+  
 - TensorFlow 2.12+  
-- Scikit-learn 1.3+  
-
-### 📥 Installation  
-
-```bash
-git clone https://github.com/<your-username>/gene-expression-phase-prediction.git
-cd gene-expression-phase-prediction
-pip install -r requirements.txt
-
-
-python evaluate_model.py
-
+- Scikit-learn 1.3+
 
 
 The script will:
 
-Load Spellman dataset (or synthetic fallback)
+Load the Spellman dataset (or synthetic fallback)
 
-Recreate test split from training
+Recreate the test split from training
 
-Load pre-trained CNN-BiLSTM model
+Load the pre-trained CNN-BiLSTM model
 
 Generate metrics: accuracy, F1-score, confusion matrix, ROC curves
 
-
-
-Use Cases
+💡 Use Cases
 🧪 Biological Research
 
 Functional annotation of uncharacterized genes
@@ -160,17 +147,9 @@ Feature extraction (gene embeddings from hidden layers)
 
 Transfer learning for related time-series datasets
 
-🛠️ Customization
-🔢 Adjust Number of Classes
-NUM_CLASSES = 6  # for finer-grained phase resolution
 
-📊 Using Custom Data
 
-Format: Genes as rows, 9 time points as columns
-
-Replace dataset loading in evaluate_model.py
-
-🧩 Architecture Modifications
+Architecture Modifications
 # Add additional CNN layers
 model.add(Conv1D(64, 3, activation='relu'))
 model.add(MaxPooling1D(2))
@@ -178,35 +157,23 @@ model.add(MaxPooling1D(2))
 # Increase BiLSTM complexity
 model.add(Bidirectional(LSTM(128, return_sequences=True)))
 
-📚 References
-
-Spellman, P. T., et al. (1998). Comprehensive identification of cell cycle–regulated genes of the yeast Saccharomyces cerevisiae by microarray hybridization. MBoC, 9(12), 3273-3297.
-
-Hochreiter, S., & Schmidhuber, J. (1997). Long short-term memory. Neural Computation, 9(8), 1735-1780.
-
-LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. Nature, 521(7553), 436-444.
-
-🤝 Contributing
-
-Contributions are welcome:
-
-Report issues or bugs
-
-Suggest architectural or biological improvements
-
-Add support for new datasets
-
-Enhance visualizations and evaluation pipeline
-
-📄 License
-
-This project is licensed under the MIT License – see the LICENSE
- file for details.
 
 
----
 
-If you want, I can also **embed example images of the Confusion Matrix and ROC curves directly in the README**, so your GitHub repo looks like a **research paper ready repository**. This is very common for high-quality bioinformatics projects.  
 
-Do you want me to do that next?
+### 📥 Installation  
+
+```bash
+git clone https://github.com/<your-username>/gene-expression-phase-prediction.git
+cd gene-expression-phase-prediction
+pip install -r requirements.txt
+
+
+```
+
+
+
+If you want, I can **also provide Python scripts to automatically generate and save the Confusion Matrix and ROC curve images** so you can directly embed them in the README for a polished, publication-ready repository.  
+
+Do you want me to do that?
 
