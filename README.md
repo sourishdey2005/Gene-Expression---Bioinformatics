@@ -6,6 +6,13 @@
 
 lightweight yet high-performance deep learning model for predicting cell-cycle phase from gene expression time-series data.
 
+<img width="987" height="886" alt="attractor_landscape" src="https://github.com/user-attachments/assets/fe2246ed-53e5-4d9e-a531-15d1e70fe45e" />
+
+<img width="5857" height="15116" alt="gene_expression_40_miniplots" src="https://github.com/user-attachments/assets/6cb67287-e0c3-4d87-be05-6621759dadcd" />
+
+<img width="3940" height="10089" alt="gene_expression_eda_part6_light" src="https://github.com/user-attachments/assets/4d9207fb-f69b-418f-83ed-0605f73c0bc7" />
+
+<img width="3943" height="10089" alt="gene_expression_eda_part9_advanced" src="https://github.com/user-attachments/assets/da268f87-8b00-4b19-b0b6-06ed30804d77" />
 
 
 
